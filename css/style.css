@@ -1,0 +1,275 @@
+/* from 500 use mobile */
+/* from 768 use tablet */
+@import url('https://fonts.googleapis.com/css2?family=Tsukimi+Rounded:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Tsukimi+Rounded:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: none;
+}
+body {
+    font-family: Segoe UI;
+    font-size: 16px;
+    color: #F5EFE7;
+    background: #080707;
+}
+
+.nav-container {
+    width: 100%;
+    height: 50px;
+    background: rgba(8, 7, 7, 0.4);
+    padding: 0 30px;
+    z-index: 999;
+    position: fixed;
+}
+.nav-items-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border-bottom: 1.5px solid #F5EFE7;
+}
+.nav-items-container-left {
+    display: flex;
+    align-items: center;
+}
+.nav-item-title {
+    text-align: center;
+    font-family: Times New Roman!important;
+    font-weight: 700;
+    letter-spacing: -1.6px;
+    margin-right: 15px;
+}
+.nav-item {
+    color: #F5EFE7;
+    text-decoration: none;
+}
+
+.banner-container {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/banner.png) no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.banner-title {
+    color: #D1BD8B;
+    font-family: Tsukimi Rounded;
+    font-size: 115px;
+    line-height: 180px;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.main-container {
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    top: 100%;
+    left: 0;
+}
+
+.about-container {
+    width: 100%;
+    height: 100vh;
+    padding: 100px 140px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-container-left-text {
+    max-width: 44.1875rem;
+    padding-right: 1rem;
+    font-size: 1.5rem;
+    letter-spacing: 3.6px;
+}
+.signature {
+    font-family: 'Caveat', cursive;
+    font-size: 41px;
+    line-height: 88px; /* 214.634% */
+    letter-spacing: -2.46px;
+    text-align: end;
+}
+
+.works-container {
+    width: 100%;
+    height: 125vh;
+    padding: 100px 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.work-item-container {
+    width: 54.782939999999996rem;
+    height: 18.75rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #F5EFE7;
+}
+.work-item-container:hover {
+    cursor: pointer;
+}
+.work-item-container-2 {
+    margin-left: 65%;
+    transform: translate(-50%, 0);
+}
+.work-item-container-2 img {
+    border-radius: 0 10px 10px 0!important;
+}
+.work-item-container-3 {
+    margin-left: 35%;
+    transform: translate(-50%, 0);
+}
+.work-item-container img {
+    margin-top: 4px;
+    width: 100%;
+    height: calc(100% - 4px);
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+    display: inline-block; /* change the default display type to inline-block */
+    overflow: hidden;
+    transform: scale(1);
+    transition: transform 1s ease;
+}
+.work-item-image {
+    display: inline-block; /* change the default display type to inline-block */
+    overflow: hidden;
+}
+.work-item-image:hover img {
+    transform:scale(1.5);
+    -ms-transform:scale(1.5); /* IE 9 */
+    -moz-transform:scale(1.5); /* Firefox */
+    -webkit-transform:scale(1.5); /* Safari and Chrome */
+    -o-transform:scale(1.5); /* Opera */
+}
+.work-item-line-between {
+    height: 100%;
+    width: 5px;
+    border-radius: 50px;
+    background-color: #F5EFE7;
+    z-index: 5;
+}
+.work-item-title {
+    font-family: Tsukimi Rounded;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2.5rem;
+}
+.work-item-title-right {
+    margin-left: -5px;
+}
+.work-item-title-left {
+    margin-right: -5px;
+}
+
+.contact-container-top {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 30px 0 60px;
+}
+.contact-container-top h3 {
+    color: #F5EFE7;
+    font-size: 9.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 8.0625rem; /* 81.646% */
+    letter-spacing: -0.5925rem;
+}
+.contact-container-top p {
+    width: 100%;
+    text-align: end;
+    border-bottom: 1.5px solid #F5EFE7;
+    font-size: 2.5rem;
+}
+.contact-container-top p span {
+    border-radius: 2.8125rem;
+    background: #F5EFE7;
+    color: #000;
+    text-align: center;
+    font-size: 2rem;
+    padding: 3px;
+}
+.contact-container-bottom {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 30px 0 60px;
+}
+.contact-container-bottom h3 {
+    font-family: Tsukimi Rounded;
+    font-size: 9.0625rem;
+    line-height: 8.0625rem;
+    letter-spacing: -0.54375rem;
+}
+.contact-links-container {
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.contact-link-item {
+    font-size: 1.6875rem;
+    color: #F5EFE7;
+    text-decoration: none;
+}
+/* media qureis for small laptop 1024 width */
+@media only screen and (max-width: 1024px) {
+    .banner-title {
+        font-size: 70px;
+        line-height: 110px;
+    }
+    .about-container {
+        padding: 100px 100px 0;
+    }
+    .about-container-left-text {
+        max-width: 40.1875rem;
+    }
+    .works-container {
+        padding: 100px 100px;
+    }
+    .contact-container-top {
+        padding: 0 30px 0 30px;
+    }
+    .contact-container-bottom {
+        padding: 0 30px 0 30px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .banner-container {
+        display: none;
+    }
+
+    .main-container {
+        top: 0;
+    }
+
+    .about-container {
+        height: 200vh;
+        padding: 100px 30px 0 30px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .about-container-left-text {
+        font-size: 1.125rem;
+        letter-spacing: 0.16875rem;
+        width: 21.25rem;
+        height: 32.375rem;
+    }
+    .about-container-right img {
+        width: 230px;
+        height: 395px;
+    }
+}
