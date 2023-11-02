@@ -225,7 +225,7 @@ body {
     text-decoration: none;
 }
 /* media qureis for small laptop 1024 width */
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1200px) {
     .banner-title {
         font-size: 70px;
         line-height: 110px;
@@ -246,8 +246,34 @@ body {
         padding: 0 30px 0 30px;
     }
 }
+@media only screen and (max-width: 834px) {
+    .about-container-right img {
+        width: 230px;
+    }
+    .about-container-left-text {
+        font-size: 1.125rem;
+    }
+    .work-item-container {
+        width: 575px;
+    }
+    .work-item-line-between {
+        height: 66%;
+    }
+    .contact-container-top h3 {
+        font-size: 5.75rem;
+    }
+    .contact-container-bottom h3 {
+        font-size: 5.75rem;
+    }
+    .contact-links-container {
+        width: 60%;
+    }
+}
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 540px) {
+    .nav-items-container-left p {
+        display: none;
+    }
     .banner-container {
         display: none;
     }
@@ -256,8 +282,17 @@ body {
         top: 0;
     }
 
+    .work-item-container {
+        flex-direction: column;
+        width: 340px;
+    }
+    .work-item-line-between {
+        height: 5px;
+        width: 100%;
+    }
+
     .about-container {
-        height: 200vh;
+        height: 165vh;
         padding: 100px 30px 0 30px;
         display: flex;
         flex-direction: column-reverse;
@@ -266,10 +301,23 @@ body {
         font-size: 1.125rem;
         letter-spacing: 0.16875rem;
         width: 21.25rem;
-        height: 32.375rem;
+        height: 40rem;
     }
     .about-container-right img {
         width: 230px;
         height: 395px;
     }
+    .contact-container-top p {
+        font-size: 1.5rem;
+    }
+    .contact-links-container {
+        width: 55%;
+    }
+    .contact-link-item {
+        font-size: 1rem;
+    }
+    .contact-container-bottom h3 {
+        font-size: 4.75rem;
+    }
+    
 }
