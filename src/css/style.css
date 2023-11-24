@@ -102,76 +102,43 @@ body {
 
 .works-container {
     width: 100%;
-    height: 125vh;
-    padding: 100px 140px;
+    height: 132vh;
+    padding: 0 140px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.work-item-container {
-    width: 54.782939999999996rem;
-    height: 18.75rem;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: #F5EFE7;
-}
-.work-item-container:hover {
-    cursor: pointer;
-}
-.work-item-container-2 {
-    margin-left: 65%;
-    transform: translate(-50%, 0);
-}
-.work-item-container-2 img {
-    border-radius: 0 10px 10px 0!important;
-}
-.work-item-container-3 {
-    margin-left: 35%;
-    transform: translate(-50%, 0);
-}
-.work-item-container img {
-    margin-top: 4px;
+.work-row {
     width: 100%;
-    height: calc(100% - 4px);
-    object-fit: cover;
-    border-radius: 10px 0 0 10px;
-    display: inline-block; /* change the default display type to inline-block */
-    overflow: hidden;
-    transform: scale(1);
-    transition: transform 1s ease;
+    display: flex;
+    text-decoration: none !important;
 }
-.work-item-image {
-    display: inline-block; /* change the default display type to inline-block */
-    overflow: hidden;
+.work-item-left {
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
-.work-item-image:hover img {
-    transform:scale(1.5);
-    -ms-transform:scale(1.5); /* IE 9 */
-    -moz-transform:scale(1.5); /* Firefox */
-    -webkit-transform:scale(1.5); /* Safari and Chrome */
-    -o-transform:scale(1.5); /* Opera */
-}
-.work-item-line-between {
+.work-item-img {
+    width: 100%;
     height: 100%;
-    width: 5px;
-    border-radius: 50px;
-    background-color: #F5EFE7;
-    z-index: 5;
+    object-fit: cover;
+}
+.work-item-right {
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
 }
 .work-item-title {
+    color: #FFF;
+    text-align: right;
     font-family: Tsukimi Rounded;
-    font-size: 2rem;
-    font-weight: 600;
-    line-height: 2.5rem;
-}
-.work-item-title-right {
-    margin-left: -5px;
+    font-size: 64px;
+    letter-spacing: -3.72px;
+    padding-bottom: 15px;
 }
 .work-item-title-left {
-    margin-right: -5px;
+
 }
 
 .contact-container-top {
