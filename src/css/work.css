@@ -145,4 +145,17 @@ body {
     background-color: transparent; /* Set corner background color */
   }
   
+.work-title-git-link {
+    color: #F5EFE7;
+    text-decoration: none;
+    font-family: Tsukimi Rounded;
+    font-size: 48px;
+    font-weight: 600;
+    letter-spacing: -2.88px;
+}  
+.work-title-git-icon {
+    padding-top: 5px;
+    vertical-align: top;
+    text-align: left;
+}
   
